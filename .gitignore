@@ -1,0 +1,27 @@
+.DS_Store
+.env
+.env.*
+*.log
+*.bak
+
+# Raw or generated data
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.xlsx
+data/raw/*.xls
+data/processed/
+exports/
+
+# Local database and BI artifacts
+*.dump
+*.backup
+*.pbix
+*.twb
+*.twbr
+
+# Editor and runtime files
+.vscode/
+.idea/
+__pycache__/
+.pytest_cache/
+pids/

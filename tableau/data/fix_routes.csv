@@ -1,0 +1,14 @@
+route_label,delivered_orders,delivered_gmv_proxy,late_orders,late_rate,investigation_owner,current_confidence
+SP → RJ,4155,514114.29,653,0.15716004813477737665,Promise-setting and mix diagnosis,high
+SP → BA,1269,173343.79,187,0.14736012608353033885,Logistics/carrier diagnosis,high
+SP → ES,792,107678.59,122,0.15404040404040404040,Promise-setting and mix diagnosis,high
+PR → RJ,596,85823.58,86,0.14429530201342281879,Promise-setting and mix diagnosis,high
+SP → CE,491,74555.92,100,0.20366598778004073320,Logistics/carrier diagnosis,high
+SP → PA,336,57455.80,58,0.17261904761904761905,Logistics/carrier diagnosis,medium
+SP → MS,298,39769.05,54,0.18120805369127516779,Seller-management diagnosis,medium
+SC → RJ,207,32119.86,25,0.12077294685990338164,Promise-setting and mix diagnosis,medium
+SP → MA,228,31083.03,49,0.21491228070175438596,Joint seller and logistics diagnosis,medium
+SP → PI,166,25293.16,33,0.19879518072289156627,Joint seller and logistics diagnosis,medium
+SP → TO,107,18534.39,18,0.16822429906542056075,Joint seller and logistics diagnosis,medium
+SP → AL,124,18005.76,29,0.23387096774193548387,Joint seller and logistics diagnosis,medium
+MA → SP,124,11545.70,25,0.20161290322580645161,Seller-management diagnosis,medium

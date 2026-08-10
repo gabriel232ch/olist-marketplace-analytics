@@ -1,0 +1,123 @@
+-- Executive KPI measures
+Delivered GMV :=
+SUM ( 'Executive KPI'[delivered_gmv_proxy] )
+
+Current Delivered GMV :=
+CALCULATE ( [Delivered GMV], 'Executive KPI'[period_sort] = 2 )
+
+Prior Delivered GMV :=
+CALCULATE ( [Delivered GMV], 'Executive KPI'[period_sort] = 1 )
+
+GMV Growth % :=
+DIVIDE ( [Current Delivered GMV] - [Prior Delivered GMV], [Prior Delivered GMV] )
+
+Delivered Orders :=
+SUM ( 'Executive KPI'[delivered_orders] )
+
+Current Delivered Orders :=
+CALCULATE ( [Delivered Orders], 'Executive KPI'[period_sort] = 2 )
+
+Prior Delivered Orders :=
+CALCULATE ( [Delivered Orders], 'Executive KPI'[period_sort] = 1 )
+
+Order Growth % :=
+DIVIDE ( [Current Delivered Orders] - [Prior Delivered Orders], [Prior Delivered Orders] )
+
+On-Time Rate :=
+DIVIDE (
+    SUM ( 'Executive KPI'[on_time_orders] ),
+    SUM ( 'Executive KPI'[on_time_eligible_orders] )
+)
+
+Low-Review Rate :=
+DIVIDE (
+    SUM ( 'Executive KPI'[low_review_orders] ),
+    SUM ( 'Executive KPI'[reviewed_orders] )
+)
+
+Freight Burden :=
+DIVIDE (
+    SUM ( 'Executive KPI'[freight_value] ),
+    SUM ( 'Executive KPI'[freight_value] ) + SUM ( 'Executive KPI'[delivered_gmv_proxy] )
+)
+
+-- Monthly trend measures
+Monthly On-Time Rate :=
+DIVIDE (
+    SUM ( 'Monthly Trend'[on_time_orders] ),
+    SUM ( 'Monthly Trend'[on_time_eligible_orders] )
+)
+
+Monthly Low-Review Rate :=
+DIVIDE (
+    SUM ( 'Monthly Trend'[low_review_orders] ),
+    SUM ( 'Monthly Trend'[reviewed_orders] )
+)
+
+-- Category-state portfolio measures
+Category-State Segments :=
+COUNTROWS ( 'Category State' )
+
+Category-State Orders :=
+SUM ( 'Category State'[current_orders] )
+
+Category-State GMV Exposure :=
+SUM ( 'Category State'[current_gmv] )
+
+Category-State Late Orders :=
+SUM ( 'Category State'[observed_late_orders] )
+
+Category-State Peer Gap Scenario :=
+SUM ( 'Category State'[excess_late_orders_to_peer_median_scenario] )
+
+Category-State On-Time Rate :=
+DIVIDE (
+    SUMX (
+        'Category State',
+        'Category State'[current_on_time_eligible_orders]
+            * 'Category State'[current_on_time_rate]
+    ),
+    SUM ( 'Category State'[current_on_time_eligible_orders] )
+)
+
+-- Seller portfolio measures
+Seller Count :=
+COUNTROWS ( 'Seller' )
+
+Seller Orders :=
+SUM ( 'Seller'[current_orders] )
+
+Seller GMV Exposure :=
+SUM ( 'Seller'[current_gmv] )
+
+Seller Late Orders :=
+SUM ( 'Seller'[observed_late_orders] )
+
+Seller Peer Gap Scenario :=
+SUM ( 'Seller'[excess_late_orders_to_peer_median_scenario] )
+
+-- Route portfolio measures
+Route Count :=
+COUNTROWS ( 'Route' )
+
+Route Orders :=
+SUM ( 'Route'[delivered_orders] )
+
+Route GMV Exposure :=
+SUM ( 'Route'[delivered_gmv_proxy] )
+
+Route Late Orders :=
+SUM ( 'Route'[late_orders] )
+
+Route Late Rate :=
+DIVIDE ( SUM ( 'Route'[late_orders] ), SUM ( 'Route'[on_time_eligible_orders] ) )
+
+-- Delay-band measures
+Reviewed Orders by Delay :=
+SUM ( 'Delay Band'[reviewed_orders] )
+
+Low Reviews by Delay :=
+SUM ( 'Delay Band'[low_review_orders] )
+
+Low-Review Rate by Delay :=
+DIVIDE ( [Low Reviews by Delay], [Reviewed Orders by Delay] )

@@ -1,0 +1,9 @@
+*.md text eol=lf
+*.sql text eol=lf
+*.csv text eol=lf
+*.dax text eol=lf
+*.json text eol=lf
+
+*.jpg binary
+*.png binary
+*.twbx binary

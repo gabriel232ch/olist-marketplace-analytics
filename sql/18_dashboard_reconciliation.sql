@@ -1,4 +1,4 @@
--- Stage 6 dashboard export reconciliation (read-only).
+
 
 -- 1) Expected dashboard views exist.
 SELECT

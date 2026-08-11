@@ -1,4 +1,4 @@
--- Stage 5D opportunity and root-cause diagnostics.
+
 -- Current decision period: Jan-Aug 2018; growth comparator: Jan-Aug 2017.
 -- No composite opportunity score is created in this stage.
 

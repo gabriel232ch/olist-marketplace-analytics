@@ -1,6 +1,4 @@
--- Stage 2B setup script; executed on 2026-08-07 after the raw table structures.
--- Creates empty typed staging tables only; future transforms insert from raw.*
--- after raw quality checks, using explicit NULLIF/casts.
+
 
 CREATE TABLE IF NOT EXISTS staging.customers (
     customer_id text PRIMARY KEY,

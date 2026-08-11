@@ -1,6 +1,4 @@
--- Stage 6 curated aggregate exports for Power BI fallback/import mode.
--- Execute with psql from the repository root after scripts 17 and 18.
--- These are public aggregate analysis outputs, not the raw Olist files.
+
 
 \copy (SELECT * FROM analytics.dashboard_executive_kpis ORDER BY period_sort) TO 'dashboard/data/executive_kpis.csv' WITH (FORMAT csv, HEADER true)
 

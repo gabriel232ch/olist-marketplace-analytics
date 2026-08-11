@@ -1,5 +1,4 @@
--- Stage 5B measurement-foundation reconciliation (read-only).
--- Run after sql/08_create_measurement_foundations.sql.
+
 
 -- 1) Output grain: one row per analytics foundation.
 SELECT foundation, rows, distinct_keys, rows = distinct_keys AS key_is_unique

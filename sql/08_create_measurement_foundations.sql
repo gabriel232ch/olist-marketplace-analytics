@@ -1,5 +1,4 @@
--- Stage 5B measurement foundations.
--- Creates documented, reusable analytics views only; no Stage 5C aggregation.
+
 -- Core grains:
 --   analytics.order_review_selected: one row per reviewed order_id
 --   analytics.order_measurement_base: one row per order_id

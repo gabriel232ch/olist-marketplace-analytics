@@ -1,6 +1,4 @@
--- Stage 5B measurement-rule profile (read-only).
--- Purpose: resolve reporting period, population, review-selection,
--- volume/confidence, and customer-observation rules before analytics DDL.
+
 
 -- 1) Output grain: one row per purchase month.
 -- Business purpose: identify partial/censored months and select comparable periods.

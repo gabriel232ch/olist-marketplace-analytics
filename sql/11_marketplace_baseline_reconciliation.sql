@@ -1,4 +1,4 @@
--- Stage 5C baseline reconciliation (read-only).
+
 
 -- 1) Monthly and matched-period totals must reconcile independently.
 SELECT

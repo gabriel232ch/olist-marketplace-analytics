@@ -1,6 +1,3 @@
--- Stage 4 staging quality checks.
--- Read-only checks after sql/05_load_staging.sql.
--- Every result states its output grain in the leading comment.
 
 -- 1) Output grain: one row per source/staging table pair. Counts must reconcile.
 WITH counts(table_name, raw_rows, staging_rows) AS (

@@ -1,4 +1,4 @@
--- Stage 5C marketplace baseline and growth decomposition.
+
 -- Commercial date basis: order purchase cohort.
 -- Stable monthly window: 2017-01 through 2018-08.
 -- Matched comparison: Jan-Aug 2017 versus Jan-Aug 2018.

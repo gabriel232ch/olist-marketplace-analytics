@@ -1,4 +1,3 @@
--- Stage 5E priority-portfolio reconciliation (read-only).
 
 -- 1) Output grains are unique.
 SELECT

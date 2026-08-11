@@ -1,4 +1,3 @@
--- Stage 5D diagnostic reconciliation (read-only).
 
 -- 1) Mutually exclusive commercial allocations reconcile to period GMV.
 SELECT allocation, prior_gmv, current_gmv, market_prior_gmv, market_current_gmv,

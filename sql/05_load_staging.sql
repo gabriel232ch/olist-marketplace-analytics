@@ -1,7 +1,4 @@
--- Stage 4 typed staging transform.
--- Purpose: convert the audited text landing layer into typed, constrained tables.
--- This script changes staging.* only; raw.* remains immutable.
--- A failed cast or constraint violation rolls back the entire load.
+
 
 BEGIN;
 

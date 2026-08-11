@@ -1,4 +1,4 @@
--- Stage 5E rule-based prioritization portfolios.
+
 -- Decision period: Jan-Aug 2018; comparison: Jan-Aug 2017.
 -- Impact, operating health, and confidence remain visible as separate fields.
 -- Scenario quantities are benchmark gaps, not forecasts or causal impact claims.

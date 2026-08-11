@@ -1,6 +1,4 @@
--- Stage 2B setup script; executed on 2026-08-07 after sql/01_create_schemas.sql.
--- Creates empty raw landing tables only; no source data is loaded.
--- Raw tables preserve source values as text and intentionally have no keys/FKs.
+
 
 CREATE TABLE IF NOT EXISTS raw.customers (
     customer_id text,

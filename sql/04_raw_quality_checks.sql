@@ -1,8 +1,6 @@
--- Stage 3 raw-layer quality checks.
--- Intended output grains are stated in each query. Read-only: no data changes.
--- Run after all nine CSVs are imported into raw.* and before any staging transform.
 
--- 1) Output grain: one row per raw table. Reconcile imported rows to DATA_MANIFEST.md.
+
+-- 1) Output grain: one row per raw table. 
 WITH expected(table_name, expected_rows) AS (
     VALUES
         ('customers', 99441::bigint),

@@ -1,5 +1,4 @@
--- Stage 5G independent headline validation (read-only).
--- Each block uses a different aggregation path or recomputes the published rule.
+
 
 -- 1) Rebuild the matched marketplace baseline directly from staging tables.
 WITH item_order AS (

@@ -158,21 +158,6 @@ Three static, recruiter-facing dashboard views and optional Power BI build asset
 
 Raw CSV files are intentionally Git-ignored and are not redistributed. The [raw-data instructions](data/raw/README.md) and [SQL execution guide](sql/README.md) provide the detailed setup sequence.
 
-## Repository map 🗂️
-
-| Path | Purpose |
-|---|---|
-| [`sql/`](sql/) | Reproducible PostgreSQL pipeline and validation queries |
-| [`docs/DATA_ARCHITECTURE.md`](docs/DATA_ARCHITECTURE.md) | End-to-end lineage, layers, grains, and validation gates |
-| [`docs/ANALYTICS_FRAMEWORK.md`](docs/ANALYTICS_FRAMEWORK.md) | Decision tree, hypotheses, evidence tiers, and research standards |
-| [`docs/METRIC_DICTIONARY.md`](docs/METRIC_DICTIONARY.md) | Populations, formulas, denominators, exclusions, and limitations |
-| [`docs/OPPORTUNITY_DIAGNOSTICS.md`](docs/OPPORTUNITY_DIAGNOSTICS.md) | Category-state, seller, route, fulfillment, and review evidence |
-| [`docs/PRIORITIZATION_RESULTS.md`](docs/PRIORITIZATION_RESULTS.md) | Explainable Grow / Defend / Fix / Investigate rules |
-| [`dashboard/data/`](dashboard/data/) | Seven presentation-safe aggregate exports |
-| [`tableau/`](tableau/) | Portable workbook, source extracts, and review guide |
-| [`powerbi/`](powerbi/) | Optional model guide, DAX measures, and theme |
-| [`docs/INTERVIEW_GUIDE.md`](docs/INTERVIEW_GUIDE.md) | Technical and business defense of the project |
-
 ## Limitations ⚠️
 
 The dataset does not include commission revenue, product or inventory cost, margin, marketing exposure, seller acquisition cost, inventory availability, carrier identity, service-level contracts, complete returns/refunds, or experiment assignment. Results are observational and dataset-relative. Recommendations are proposed operating tests—not implemented business impact.
